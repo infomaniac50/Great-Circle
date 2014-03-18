@@ -7,10 +7,11 @@ This repository presents a variety of calculations for latitude/longitude points
 java -jar GreatCircle.jar [Demo]
 
 ### Authorship
-Java Port  
+
+#### Java Port  
 Copyright Derek Chafin 2014  
 
-Original Javascript Version  
+#### Original Javascript Version  
 Copyright Chris Veness 2002-2012  
 [Calculate distance, bearing and more between Latitude/Longitude points - http://www.movable-type.co.uk/scripts/latlong.html](http://www.movable-type.co.uk/scripts/latlong.html)
 
