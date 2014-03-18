@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="GreatCircle.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/GreatCircle/Release.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=GreatCircle/src&lt;{Main.java[Main" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/GreatCircle/doc/package-frame.html"/>
+        <file path="/GreatCircle/doc/overview-tree.html"/>
+        <file path="/GreatCircle/doc/allclasses-noframe.html"/>
+        <javaElement handleIdentifier="=GreatCircle/src"/>
+        <folder path="/GreatCircle/doc/class-use"/>
+        <file path="/GreatCircle/doc/package-summary.html"/>
+        <file path="/GreatCircle/doc/resources/tab.gif"/>
+        <file path="/GreatCircle/doc/resources/titlebar.gif"/>
+        <file path="/GreatCircle/doc/Main.html"/>
+        <file path="/GreatCircle/doc/index.html"/>
+        <file path="/GreatCircle/doc/help-doc.html"/>
+        <file path="/GreatCircle/doc/GreatCircle.html"/>
+        <file path="/GreatCircle/doc/package-use.html"/>
+        <file path="/GreatCircle/doc/Demo.html"/>
+        <file path="/GreatCircle/doc/package-tree.html"/>
+        <file path="/GreatCircle/doc/resources/titlebar_end.gif"/>
+        <file path="/GreatCircle/doc/stylesheet.css"/>
+        <file path="/GreatCircle/doc/allclasses-frame.html"/>
+        <file path="/GreatCircle/doc/LatLong.html"/>
+        <file path="/GreatCircle/doc/deprecated-list.html"/>
+        <folder path="/GreatCircle/doc/index-files"/>
+        <file path="/GreatCircle/doc/resources/background.gif"/>
+        <file path="/GreatCircle/doc/package-list"/>
+        <file path="/GreatCircle/doc/constant-values.html"/>
+    </selectedElements>
+</jardesc>
