@@ -3,8 +3,6 @@
  * @version 1.0.1
  */
 public class LatLong {
-    private static final long serialVersionUID = 8101666014232058675L;
-
     public static final double R = 6371; // km
 
     private double latitude;
@@ -116,7 +114,7 @@ public class LatLong {
      * @return          The distance between two points in radians.
      */
     public double equirectangularApproximation(LatLong location) {
-        return LatLong.equirectangularApproximation(this.latitude, this.longitude, location.x, location.y);
+        return LatLong.equirectangularApproximation(this.latitude, this.longitude, location.latitude, location.longitude);
     }
 
     /**
@@ -125,7 +123,7 @@ public class LatLong {
      * @return          The distance between two points in radians.
      */
     public double haversine(LatLong location) {
-        return LatLong.haversine(this.latitude, this.longitude, location.x, location.y);
+        return LatLong.haversine(this.latitude, this.longitude, location.latitude, location.longitude);
     }
 
     /**
@@ -135,6 +133,6 @@ public class LatLong {
      * @deprecated The function is for reference only. Do not use it in production.
      */
     public double sphericalLawOfCosines(LatLong location) {
-        return LatLong.sphericalLawOfCosines(this.latitude, this.longitude, location.x, location.y);
+        return LatLong.sphericalLawOfCosines(this.latitude, this.longitude, location.latitude, location.longitude);
     }
 }
