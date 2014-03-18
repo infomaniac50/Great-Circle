@@ -48,3 +48,5 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
+# Added by Derek Chafin
+doc/

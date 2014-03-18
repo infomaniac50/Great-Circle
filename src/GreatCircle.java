@@ -1,28 +1,28 @@
-/*************************************************************************
- *  Compilation:  javac GreatCircle.java
- *  Execution:    java GreatCircle L1 G1 L2 G2
- *
- *  Given the latitude and longitude (in degrees) of two points compute
- *  the great circle distance (in nautical miles) between them. The
- *  following formula assumes that sin, cos, and arcos are comptued
- *  in degrees, so need to convert back and forth between radians.
- *
- *     d  = 60 * acos (sin(L1)*sin(L2) + cos(L1)*cos(L2)*cos(G1 - G2))
- *
- *
- *  % java GreatCircle 59.9 -30.3 37.8 122.4        // Leningrad to SF
- *  4784.369673474519 nautical miles
- *
- *  % java GreatCircle 48.87 -2.33 30.27 97.74      // Paris to Austin
- *  4423.14075970742 nautical miles
- *
- *  % java GreatCircle 36.12 -86.67 33.94 -118.4    // Nashville airport (BNA) to LAX
- *  1557.50511103695 nautical miles
- *
- *  % java GreatCircle 40.35 74.65 48.87 -2.33      // Princeton to Paris
- *  3185.1779271158425 nautical miles
- *
- *************************************************************************/
+/**
+ *  Compilation:  javac GreatCircle.java<br>
+ *  Execution:    java GreatCircle L1 G1 L2 G2<br>
+ *<br>
+ *  Given the latitude and longitude (in degrees) of two points compute<br>
+ *  the great circle distance (in nautical miles) between them. The<br>
+ *  following formula assumes that sin, cos, and arcos are comptued<br>
+ *  in degrees, so need to convert back and forth between radians.<br>
+ *<br>
+ *     d  = 60 * acos (sin(L1)*sin(L2) + cos(L1)*cos(L2)*cos(G1 - G2))<br>
+ *<br>
+ *<br>
+ *  % java GreatCircle 59.9 -30.3 37.8 122.4        // Leningrad to SF<br>
+ *  4784.369673474519 nautical miles<br>
+ *<br>
+ *  % java GreatCircle 48.87 -2.33 30.27 97.74      // Paris to Austin<br>
+ *  4423.14075970742 nautical miles<br>
+ *<br>
+ *  % java GreatCircle 36.12 -86.67 33.94 -118.4    // Nashville airport (BNA) to LAX<br>
+ *  1557.50511103695 nautical miles<br>
+ *<br>
+ *  % java GreatCircle 40.35 74.65 48.87 -2.33      // Princeton to Paris<br>
+ *  3185.1779271158425 nautical miles<br>
+ *<br>
+ **/
 
 public class GreatCircle {
     public static void main(String[] args) {

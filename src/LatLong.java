@@ -1,60 +1,13 @@
 /**
+ * A class representing the longitude and latitude of a single point on Earth.
  * @author Derek Chafin
  * @version 1.0.1
  */
 public class LatLong {
+	/**
+     * The radius of the Earth.
+     */
     public static final double R = 6371; // km
-
-    private double latitude;
-    private double longitude;
-
-    /**
-     * Constructor
-     * @param  latitude  Latitude in radians.
-     * @param  longitude Longitude in radians.
-     * @return           A new instance of this class.
-     */
-    public LatLong(double latitude, double longitude) {
-       this.latitude = latitude;
-       this.longitude = longitude;
-    }
-
-    /**
-     * Gets the latitude.
-     * @return The latitude.
-     */
-    public double getLatitude() {
-        return this.latitude;
-    }
-
-    /**
-     * Gets the longitude.
-     * @return The longitude.
-     */
-    public double getLongitude() {
-        return this.longitude;
-    }
-
-    /**
-     * Convert degree minute seconds to decimal degrees.
-     * @param  degrees Degrees
-     * @param  minutes Minutes
-     * @param  seconds Seconds
-     * @return         The decimal degrees equivalent of DD:MM":SS.SS' notation.
-     */
-    public static double toDecimalDegrees(double degrees, double minutes, double seconds) {
-        return degrees + (minutes / 60) + ((seconds / 60) / 60);
-    }
-
-    /**
-     * Helper function to instanitate this class from degrees instead of radians.
-     * @param  latitude  Latitude in degrees.
-     * @param  longitude Longitude in degrees.
-     * @return           A new instance of this class.
-     */
-    public static LatLong fromDecimalDegrees(double latitude, double longitude) {
-        return new LatLong(Math.toRadians(latitude), Math.toRadians(longitude));
-    }
 
     /**
      * Calculates the distance between two points using Pythagora's theorem (a^2 + b^2 = c^2).
@@ -71,6 +24,16 @@ public class LatLong {
         double distance = Math.sqrt(x*x + y*y);
 
         return distance;
+    }
+
+    /**
+     * Helper function using degrees instead of radians.
+     * @param  latitude  Latitude in degrees.
+     * @param  longitude Longitude in degrees.
+     * @return           A new instance of {@code LatLong}.
+     */
+    public static LatLong fromDecimalDegrees(double latitude, double longitude) {
+        return new LatLong(Math.toRadians(latitude), Math.toRadians(longitude));
     }
 
     /**
@@ -109,12 +72,52 @@ public class LatLong {
     }
 
     /**
+     * Convert degrees minutes seconds to decimal degrees.
+     * @param  degrees Degrees
+     * @param  minutes Minutes
+     * @param  seconds Seconds
+     * @return         The converted value in decimal degrees.
+     */
+    public static double toDecimalDegrees(double degrees, double minutes, double seconds) {
+        return degrees + (minutes / 60) + ((seconds / 60) / 60);
+    }
+
+    private double latitude;
+
+    private double longitude;
+
+    /**
+     * @param  latitude  Latitude in radians.
+     * @param  longitude Longitude in radians.
+     */
+    public LatLong(double latitude, double longitude) {
+       this.latitude = latitude;
+       this.longitude = longitude;
+    }
+
+    /**
      * Calculates the distance between two points using Pythagora's theorem (a^2 + b^2 = c^2).
      * @param  location The second point in the calcuation.
      * @return          The distance between two points in radians.
      */
     public double equirectangularApproximation(LatLong location) {
         return LatLong.equirectangularApproximation(this.latitude, this.longitude, location.latitude, location.longitude);
+    }
+
+    /**
+     * Gets the latitude.
+     * @return The latitude.
+     */
+    public double getLatitude() {
+        return this.latitude;
+    }
+
+    /**
+     * Gets the longitude.
+     * @return The longitude.
+     */
+    public double getLongitude() {
+        return this.longitude;
     }
 
     /**
