@@ -1,7 +1,7 @@
 ## Great Circle Calculator
 
 ### Description
-All these formulæ are for calculations on the basis of a spherical earth (ignoring ellipsoidal effects) – which is accurate enough* for most purposes… [In fact, the earth is very slightly ellipsoidal; using a spherical model gives errors typically up to 0.3%].
+This repository presents a variety of calculations for latitude/longitude points. All these formulæ are for calculations on the basis of a spherical earth (ignoring ellipsoidal effects) – which is accurate enough* for most purposes… [In fact, the earth is very slightly ellipsoidal; using a spherical model gives errors typically up to 0.3%].
 
 ### Usage
 java -jar GreatCircle.jar [Demo]
